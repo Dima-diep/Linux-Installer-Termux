@@ -91,7 +91,7 @@ elif a == 2:
     time.sleep(1.25)
     print("Installing Ubuntu 20.04 LTS subsystem Termux...")
     time.sleep(1.25)
-    os.system("cd ~ && pkg update -y && pkg install curl proot tar -y && curl https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Installer/Ubuntu20/ubuntu20.sh | bash && chmod +x * && ./start-ubuntu20.sh")
+    os.system("cd ~ && proot-distro install ubuntu-20.04")
 elif a == 3:
     os.system("clear")
     time.sleep(5)
