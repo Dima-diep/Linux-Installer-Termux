@@ -6,6 +6,9 @@ from colorama import init
 from termcolor import colored
 
 init()
+print("Install requirements... ")
+os.system("apt install figlet toilet ruby2")
+os.system("gem install lolcat")
 os.system("clear")
 for i in range(0,45):
     print("Loading install program:")
