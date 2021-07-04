@@ -7,3 +7,7 @@ How install:
 
 $ pip install -r requirements.txt
 $ python linux.py
+
+or, you can do it:
+
+$ python linux2.py
