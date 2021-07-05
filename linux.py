@@ -42,41 +42,28 @@ a = int(input())
 
 os.system("clear")
 time.sleep(2.5)
-print(r"Setting up apt \ ")
-time.sleep(0.5)
-os.system("clear")
-print("Setting up apt | ")
-time.sleep(0.5)
-os.system("clear")
-print("Setting up apt / ")
-time.sleep(0.5)
-os.system("clear")
-print("Setting up apt — ")
-time.sleep(0.5)
-os.system("clear")
-print(r"Setting up apt \ ")
-time.sleep(0.5)
-os.system("clear")
-print("Setting up apt | ")
-time.sleep(0.5)
-os.system("clear")
-print("Setting up apt / ")
-time.sleep(0.5)
-os.system("clear")
-print("Setting up apt — ")
-time.sleep(0.5)
-os.system("clear")
-print(r"Setting up apt \ ")
-time.sleep(0.5)
-os.system("clear")
-print("Setting up apt | ")
-time.sleep(0.5)
-os.system("clear")
-print("Setting up apt / ")
-time.sleep(0.5)
-os.system("clear")
-print("Setting up apt — ")
-time.sleep(0.5)
+def loading() -> None:
+    load = ["\", "|", "/", "-"]
+    while True:
+        for p in load:
+            print("Setting up apt... {p}")
+            sleep(0.5)
+            os.system("clear")
+def loading() -> None:
+    load = ["\", "|", "/", "-"]
+    while True:
+        for p in load:
+            print("Setting up apt... {p}")
+            sleep(0.5)
+            os.system("clear")
+def loading() -> None:
+    load = ["\", "|", "/", "-"]
+    while True:
+        for p in load:
+            print("Setting up apt... {p}")
+            sleep(0.5)
+            os.system("clear")
+time.sleep(2.5)
 os.system("clear")
 
 if a == 1:
