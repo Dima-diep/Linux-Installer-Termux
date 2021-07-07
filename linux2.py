@@ -26,6 +26,7 @@ if a == 1:
     b = int(input())
 
     if b == 1:
+        os.system("cat arch.linux | lolcat -S 65 -a -s 40 -i")
         print("Your desktop:")
         print("1.LXDE")
         print("2.XFCE")
@@ -116,6 +117,8 @@ elif a == 3:
     elif h == 7:
         os.system("curl -LO https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Installer/Fedora/fedora.sh | bash")
 elif a == 4:
+    os.system("cat kali.linux | lolcat -S 55 -a -s 40 -i")
+    os.system("toilet KALI -F crop -F border | lolcat -S 55 -a -s 40 -i") 
     print("Your desktop:")
     print("1.Awesome")
     print("2.i3/i3wm")
@@ -141,6 +144,7 @@ elif a == 4:
     elif i == 7:
         os.system("curl -LO https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Installer/Kali/kali.sh | bash")
 elif a == 5:
+    os.system("cat Ubuntu | lolcat -S 30 -a -s 40 -i")
     print("Your desktop:")
     print("1.Awesome")
     print("2.i3/i3wm")
@@ -196,6 +200,7 @@ elif a == 7:
     elif l == 7:
         os.system("curl -LO https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Installer/Void/void.sh | bash")
 elif a == 8:
+    os.system("cat deb.ian | lolcat -S 40 -a -s 40")
     print("Your desktop:")
     print("1.Awesome")
     print("2.i3/i3wm")
