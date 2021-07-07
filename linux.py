@@ -57,6 +57,7 @@ if a == 1:
     os.system("clear")
     time.sleep(5)
     os.system("toilet -F crop -F border KALI | lolcat -S 55 -a -s 40 -i")
+    os.system("cat kali.linux | lolcat -S 55 -a -s 40 -i")
     time.sleep(1.25)
     print("Installing Kali subsystem Termux...")
     time.sleep(1.25)
@@ -65,6 +66,7 @@ elif a == 2:
     os.system("clear")
     time.sleep(5)
     os.system("toilet -F crop -F border ubuntu | lolcat -S 30 -a -s 40 -i")
+    os.system("cat Ubuntu | lolcat -S 30 -a -s 40 -i")
     time.sleep(1.25)
     print("Installing Ubuntu 20.04 LTS subsystem Termux...")
     time.sleep(1.25)
@@ -75,6 +77,7 @@ elif a == 3:
     os.system("cd ~ && toilet -F crop -F border DEBIAN | lolcat -S 40 -a -s 40 -i")
     time.sleep(1.25)
     print("Installing Debian subsystem Termux...")
+    os.system("cat deb.ian | lolcat -S 40 -a -s 40")
     time.sleep(1.25)
     os.system("cd ~ && pkg update -y && pkg install curl proot tar -y && curl https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Installer/Debian/debian.sh | bash && cgmod +x * && ./start-debian.sh")
 elif a == 4:
@@ -83,6 +86,7 @@ elif a == 4:
     os.system("toilet -F crop -F border Arch | lolcat -S 65 -a -s 40")
     time.sleep(1.25)
     print("Installing Arch subsystem Termux...")
+    os.system("cat arch.linux | lolcat -S 65 -a -s 40 -i")
     time.sleep(1.25)
     os.system("cd ~ && pkg update -y && pkg install curl proot tar -y && curl https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Installer/Arch/armhf/arch.sh | bash && chmod + x * && ./start-arch.sh")
 elif a == 5:
@@ -154,5 +158,6 @@ elif a == 13:
     os.system("figlet -f big BlackArch")
     time.sleep(1.25)
     print("Installing BlackArch subsystem Termux...")
+    os.system("cat arch.linux")
     time.sleep(1.25)
     os.system("cd ~ && pacman-key --init && pacman-key --populate archlinuxarm && pacman -Sy --noconfirm curl && curl -O https://blackarch.org/strap.sh && chmod +x strap.sh && ./strap.sh && chmod +x * && ./start-arch.sh")
