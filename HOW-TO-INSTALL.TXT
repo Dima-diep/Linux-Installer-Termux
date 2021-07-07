@@ -1,15 +1,11 @@
 # Linux-Installer-Termux
 Installer any Linux on Termux
 
-Old version can't work at very much people. Now, I've fix it
-
 How install:
 
-$ apt install toilet figlet ruby2(or ruby)
-WARNING: CHECK ruby AT:
-$ apt list | grep ruby
+$ chmod +x * && bash install-requirements.sh
+WARNING: CHECK ruby BY ruby-check.sh
 If you have ruby/ruby2, don't install any ruby!!!
-$ gem install lolcat
 $ pip install -r requirements.txt
 $ python linux.py
 
