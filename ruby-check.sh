@@ -1,2 +1,2 @@
 #!/bin/bash
-apt list | grep ruby
+apt list | grep ruby2
