@@ -4,11 +4,8 @@ Installer any Linux on Termux
 How install:
 
 $ chmod +x * && bash install-requirements.sh
-WARNING: CHECK ruby BY ruby-check.sh
-If you have ruby/ruby2, don't install any ruby!!!
-Else, run ruby.sh
-$ python linux.py
+$ python3 linux.py
 
 or, you can do it:
 
-$ python linux2.py
+$ python3 linux2.py
