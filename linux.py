@@ -39,7 +39,7 @@ os.system("clear")
 time.sleep(2.5)
 for i in range(0,3):
     def loading() -> None:
-        load = ["\", "|", "/", "-"]
+        load = ["\\", "|", "/", "-"]
         while True:
             for p in load:
                 print("Setting up apt... {p}")
