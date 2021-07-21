@@ -17,3 +17,5 @@ or
 ```
 $ python3 linux2.py
 ```
+The first installer can install Kali Linux, Ubuntu, Debian, Arch Linux, Manjaro, Fedora, Void, Alpine, BackBox, openSUSE, BlackArch and work only on Android
+The second installer can install Arch Linux, Alpine, Fedora, Parrot OS, Kali Linux, Ubuntu, Void, Debian, Manjaro. Work on iPhone(Alpine) and PC(Arch)
