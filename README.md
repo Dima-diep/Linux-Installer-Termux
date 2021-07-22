@@ -6,9 +6,12 @@ OS system = Termux
 ## Installation
 For starting, run
 ```
-$ chmod 777 * && bash install-requirements.sh
+$ chmod 777 * && bash install-android-requirements.sh
 ```
-
+If you use iOS, run
+```
+chmod 777 * && sh install-ios-requirements.sh
+```
 Then, run:
 ```
 $ python3 linux.py
