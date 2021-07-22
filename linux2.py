@@ -21,6 +21,7 @@ if a == 1:
     print("1.amd64")
     print("2.armhf")
     print("If you are at arm64, please use armhf installer...")
+    print("arm64 is the same as aarch64")
     # I'm using armhf Arch Linux system at my phone - arm64. I haven't got any problems...
     print("Architecture:")
     b = int(input())
@@ -88,9 +89,9 @@ elif a == 2:
         g = int(input())
 
         if g == 1:
-            os.system("curl -LO https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Installer/Alpine/alpine-mate.sh | bash")
+            os.system("curl -LO https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Installer/Alpine/alpine-mate.sh && sh alpine-mate.sh")
         elif g == 2:
-            os.system("curl -LO https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Installer/Alpine/alpine-xfce.sh | bash")
+            os.system("curl -LO https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Installer/Alpine/alpine-xfce.sh && sh alpine-xfce.sh")
 elif a == 3:
     print("Your desktop:")
     print("1.Awesome")
