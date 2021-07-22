@@ -17,81 +17,41 @@ print("Install OS:")
 a = int(input())
 
 if a == 1:
-    print("Your system architecture?")
-    print("1.amd64")
-    print("2.armhf")
-    print("If you are at arm64, please use armhf installer...")
-    print("arm64 is the same as aarch64")
-    # I'm using armhf Arch Linux system at my phone - arm64. I haven't got any problems...
-    print("Architecture:")
-    b = int(input())
+    print("Your desktop:")
+    print("1.Awesome")
+    print("2.i3/i3wm")
+    print("3.LXDE")
+    print("4.XFCE")
+    print("5.openbox")
+    print("6.Install without desktop")
+    print("Your desktop:")
+    d = int(input())
 
-    if b == 1:
-        os.system("cat arch.linux | lolcat -S 65 -a -s 40 -i")
-        print("Your desktop:")
-        print("1.LXDE")
-        print("2.XFCE")
-        print("3.Install without desktop")
-        print("Your desktop:")
-        c = int(input())
-
-        if c == 1:
-            os.system("curl -LO https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Installer/Arch/amd64/arch-lxde.sh | bash")
-        elif c == 2:
-            os.system("curl -LO https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Installer/Arch/amd64/arch-xfce.sh | bash")
-        elif c == 3:
-            os.system("curl -LO https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Installer/Arch/amd64/arch.sh | bash")
-    elif b = 2:
-        print("Your desktop:")
-        print("1.Awesome")
-        print("2.i3/i3wm")
-        print("3.LXDE")
-        print("4.XFCE")
-        print("5.openbox")
-        print("6.Install without desktop")
-        print("Your desktop:")
-        d = int(input())
-
-        if d == 1:
-            os.system("curl -LO https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Installer/Arch/armhf/arch-awesome.sh | bash")
-        elif d == 2:
-            os.system("curl -LO https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Installer/Arch/armhf/arch-i3.sh | bash")
-        elif d == 3:
-            os.system("curl -LO https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Installer/Arch/armhf/arch-lxde.sh | bash")
-        elif d == 4:
-            os.system("curl -LO https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Installer/Arch/armhf/arch-xfce.sh | bash")
-        elif d == 5:
-            os.system("curl -LO https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Installer/Arch/armhf/arch-openbox.sh | bash")
-        elif d == 6:
-            os.system("curl -LO https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Installer/Arch/armhf/arch.sh | bash")
+    if d == 1:
+        os.system("curl -LO https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Installer/Arch/armhf/arch-awesome.sh | bash")
+    elif d == 2:
+        os.system("curl -LO https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Installer/Arch/armhf/arch-i3.sh | bash")
+    elif d == 3:
+        os.system("curl -LO https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Installer/Arch/armhf/arch-lxde.sh | bash")
+    elif d == 4:
+        os.system("curl -LO https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Installer/Arch/armhf/arch-xfce.sh | bash")
+    elif d == 5:
+        os.system("curl -LO https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Installer/Arch/armhf/arch-openbox.sh | bash")
+    elif d == 6:
+        os.system("curl -LO https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Installer/Arch/armhf/arch.sh | bash")
 elif a == 2:
-    print("Your phone:")
-    print("1.Android")
-    print("2.iPhone/iPad")
-    print("Your phone:")
-    e = int(input())
+    print("Your desktop:")
+    print("1.MATE")
+    print("2.XFCE")
+    print("3.Install without desktop")
+    g = int(input())
 
-    if e == 1:
-        print("Your desktop:")
-        print("1.XFCE")
-        print("2.Install without desktop")
-        print("Your desktop:")
-        f = int(input())
-
-        if f == 1:
-            os.system("curl -LO https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Installer/Alpine/alpinexfce.sh | bash")
-        elif f == 2:
-            os.system("curl -LO https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Installer/Alpine/alpine.sh | bash")
-    elif e == 2:
-        print("Your desktop:")
-        print("1.MATE")
-        print("2.XFCE")
-        g = int(input())
-
-        if g == 1:
-            os.system("curl -LO https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Installer/Alpine/alpine-mate.sh && sh alpine-mate.sh")
-        elif g == 2:
-            os.system("curl -LO https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Installer/Alpine/alpine-xfce.sh && sh alpine-xfce.sh")
+    if g == 1:
+        os.system("curl -LO https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Installer/Alpine/alpine-mate.sh && bash alpine-mate.sh")
+    elif g == 2:
+        os.system("curl -LO https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Installer/Alpine/alpine-xfce.sh && bash alpine-xfce.sh")
+    elif g == 3:
+        os.system("curl -LO https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Installer/Alpine/alpine.sh | bash")
 elif a == 3:
     print("Your desktop:")
     print("1.Awesome")
