@@ -6,7 +6,7 @@ OS system = Termux(Android)
 ## Installation
 For starting, run:
 ```
-$ chmod 777 * && bash install-android-requirements.sh
+$ chmod 777 * && bash install-requirements.sh
 ```
 Then, run:
 ```
