@@ -16,6 +16,6 @@ or
 ```
 $ python3 linux2.py
 ```
-The first installer can install `Kali Linux, Ubuntu, Debian, Arch Linux, Manjaro, Fedora, Void, Alpine, BackBox, openSUSE, BlackArch`
+The first installer can install `Kali Linux, Ubuntu, Debian, Arch Linux, Manjaro, Fedora, Void, Alpine, BackBox, openSUSE`
 
 The second installer can install `Arch Linux, Alpine, Fedora, Parrot OS, Kali Linux, Ubuntu, Void, Debian, Manjaro.`
