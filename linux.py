@@ -2,8 +2,6 @@
 # -*- coding: utf-8 -*-
 import os
 import time
-from colorama import init
-from termcolor import colored
 
 init()
 for i in range(0,45):
