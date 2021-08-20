@@ -3,7 +3,6 @@
 import os
 import time
 
-init()
 for i in range(0,45):
     print("Loading install program:")
     print("#"*i)
