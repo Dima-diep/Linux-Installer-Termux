@@ -52,7 +52,7 @@ if a == 1:
     time.sleep(1.25)
     print("Installing Kali subsystem Termux...")
     time.sleep(1.25)
-    os.system("cd ~ && pkg update -y && pkg install curl proot tar -y && curl https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Installer/Kali/kali.sh | bash && chmod +x * && ./start-kali.sh")
+    os.system("cd ~ && pkg update -yq && pkg install wget curl proot tar -yq && wget https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Installer/Kali/kali.sh -O kali.sh && chmod +x kali.sh && bash kali.sh")
 elif a == 2:
     os.system("clear")
     time.sleep(5)
@@ -61,7 +61,7 @@ elif a == 2:
     time.sleep(1.25)
     print("Installing Ubuntu 20.04 LTS subsystem Termux...")
     time.sleep(1.25)
-    os.system("cd ~ && proot-distro install ubuntu-20.04")
+    os.system("cd ~ && pkg update -yq && pkg install wget curl proot tar -yq && wget https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Installer/Ubuntu20/ubuntu20.sh -O ubuntu20.sh && chmod +x ubuntu20.sh && bash ubuntu20.sh")
 elif a == 3:
     os.system("clear")
     time.sleep(5)
@@ -70,7 +70,7 @@ elif a == 3:
     print("Installing Debian subsystem Termux...")
     os.system("cat deb.ian | lolcat -S 40 -a -s 40")
     time.sleep(1.25)
-    os.system("cd ~ && pkg update -y && pkg install curl proot tar -y && curl https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Installer/Debian/debian.sh | bash && cgmod +x * && ./start-debian.sh")
+    os.system("cd ~ && pkg update -yq && pkg install wget curl proot tar -yq && wget https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Installer/Debian/debian.sh -O debian.sh && chmod +x debian.sh && bash debian.sh")
 elif a == 4:
     os.system("clear")
     time.sleep(5)
@@ -79,7 +79,7 @@ elif a == 4:
     print("Installing Arch subsystem Termux...")
     os.system("cat arch.linux | lolcat -S 65 -a -s 40 -i")
     time.sleep(1.25)
-    os.system("cd ~ && pkg update -y && pkg install curl proot tar -y && curl https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Installer/Arch/armhf/arch.sh | bash && chmod + x * && ./start-arch.sh")
+    os.system("cd ~ && pkg update -yq && pkg install wget curl proot tar -yq && wget https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Installer/Arch/armhf/arch.sh -O arch.sh && chmod +x arch.sh && bash arch.sh")
 elif a == 5:
     os.system("clear")
     time.sleep(5)
@@ -87,14 +87,14 @@ elif a == 5:
     time.sleep(1.25)
     print("Installing Manjaro subsystem Termux...")
     time.sleep(1.25)
-    os.system("cd ~ && pkg update -y && pkg install curl proot tar -y && curl https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Installer/Arch/armhf/arch.sh | bash && chmod +x * && ./start-arch.sh")
+    os.system("cd ~ && pkg update -yq && pkg install wget curl proot tar -yq && wget https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Installer/Manjaro/manjaro.sh -O manjaro.sh && chmod +x manjaro.sh && bash manjaro.sh")
 elif a == 6:
     os.system("clear")
     time.sleep(5)
     os.system("toilet -F crop -F border Fedora 33 | lolcat -S 62 -a -s 40 -i")
     time.sleep(1.25)
     print("Installing Fedora subsystem Termux...")
-    os.system("cd ~ && pkg update -y && pkg install curl proot tar -y && curl https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Installer/Fedora/fedora.sh | bash && chmod +x * && ./start-fedora.sh")
+    os.system("cd ~ && pkg update -yq && pkg install wget curl proot tar -yq && wget https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Installer/Fedora/fedora.sh -O fedora.sh && chmod +x fedora.sh && bash fedora.sh")
 elif a == 7:
     os.system("clear")
     time.sleep(5)
@@ -102,7 +102,7 @@ elif a == 7:
     time.sleep(1.25)
     print("Installing void subsystem Termux...")
     time.sleep(1.25)
-    os.system("cd ~ && pkg update -y && pkg install curl proot tar -y && curl https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Installer/Void/void.sh | bash && chmod + * && ./start-void.sh")
+    os.system("cd ~ && pkg update -yq && pkg install wget curl proot tar -yq && wget https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Installer/Void/void.sh && chmod +x void.sh && bash void.sh")
 elif a == 8:
     os.system("clear")
     time.sleep(5)
@@ -110,7 +110,7 @@ elif a == 8:
     time.sleep(1.25)
     print("Installing Alpine subsystem Termux...")
     time.sleep(1.25)
-    os.system("cd ~ && pkg update -y && pkg install curl proot tar -y && curl https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Installer/Alpine/alpine.sh | bash && chmod + x * && ./start-alpine.sh")
+    os.system("cd ~ && pkg update -yq && pkg install wget curl proot tar -yq && wget https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Installer/Alpine/alpine.sh -O alpine.sh && chmod +x alpine.sh && bash alpine.sh://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Installer/Alpine/alpine.sh | bash")
 elif a == 9:
     os.system("clear")
     time.sleep(5)
@@ -118,7 +118,7 @@ elif a == 9:
     time.sleep(1.25)
     print("Installing BackBox subsystem Termux...")
     time.sleep(1.25)
-    os.system("cd ~ && pkg install wget openssl-tool proot -y && hash -r && wget https://raw.githubusercontent.com/EXALAB/AnLinux-Resources/master/Scripts/Installer/BackBox/backbox.sh && chmod +x * && bash backbox.sh && chmod +x * && ./start-backbox.sh")
+    os.system("cd ~ && pkg install wget openssl-tool proot -yq && hash -r && wget https://raw.githubusercontent.com/EXALAB/AnLinux-Resources/master/Scripts/Installer/BackBox/backbox.sh && chmod +x * && bash backbox.sh && chmod +x * && ./start-backbox.sh")
 elif a == 10:
     os.system("clear")
     time.sleep(5)
@@ -126,7 +126,7 @@ elif a == 10:
     time.sleep(1.25)
     print("Installing CentOS subsystem Termux...")
     time.sleep(1.25)
-    os.system("cd ~ && pkg install wget openssl-tool proot tar -y && hash -r && wget https://raw.githubusercontent.com/EXALAB/AnLinux-Resources/master/Scripts/Installer/CentOS/centos.sh && chmod +x * && bash centos.sh && chmod +x * && ./start-centos.sh")
+    os.system("cd ~ && pkg install wget openssl-tool proot tar -yq && hash -r && wget https://raw.githubusercontent.com/EXALAB/AnLinux-Resources/master/Scripts/Installer/CentOS/centos.sh && chmod +x * && bash centos.sh && chmod +x * && ./start-centos.sh")
 elif a == 11:
     os.system("clear")
     time.sleep(5)
@@ -134,7 +134,7 @@ elif a == 11:
     time.sleep(1.25)
     print("Installing openSUSE Leap subsystem Termux...")
     time.sleep(1.25)
-    os.system("cd ~ && pkg install wget openssl-tool proot tar -y && hash -r && wget https://raw.githubusercontent.com/EXALAB/AnLinux-Resources/master/Scripts/Installer/openSUSE/Leap/opensuse-leap.sh && chmod +x * && bash opensuse-leap.sh && chmod +x * && ./start-leap.sh")
+    os.system("cd ~ && pkg install wget openssl-tool proot tar -yq && hash -r && wget https://raw.githubusercontent.com/EXALAB/AnLinux-Resources/master/Scripts/Installer/openSUSE/Leap/opensuse-leap.sh && chmod +x * && bash opensuse-leap.sh && chmod +x * && ./start-leap.sh")
 elif a == 12:
     os.system("clear")
     time.sleep(5)
@@ -142,4 +142,4 @@ elif a == 12:
     time.sleep(1.25)
     print("Installing openSUSE Tumbleweed subsystem Termux...")
     time.sleep(1.25)
-    os.system("cd ~ && pkg install wget openssl-tool proot tar -y && hash -r && wget https://raw.githubusercontent.com/EXALAB/AnLinux-Resources/master/Scripts/Installer/openSUSE/Tumbleweed/opensuse-tumbleweed.sh && chmod +x * && bash opensuse-tumbleweed.sh && chmod +x * && ./start-tumbleweed.sh")
+    os.system("cd ~ && pkg install wget openssl-tool proot tar -yq && hash -r && wget https://raw.githubusercontent.com/EXALAB/AnLinux-Resources/master/Scripts/Installer/openSUSE/Tumbleweed/opensuse-tumbleweed.sh && chmod +x * && bash opensuse-tumbleweed.sh && chmod +x * && ./start-tumbleweed.sh")
