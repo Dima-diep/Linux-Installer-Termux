@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 import os
 import time
+from prettytable import PrettyTable
 
 for i in range(0,45):
     print("Loading install program:")
@@ -9,23 +10,27 @@ for i in range(0,45):
     time.sleep(0.1)
     os.system("clear")
 time.sleep(2.5)
-print("<What LinuxOS do you want install in Termux>")
-print("<==========================================>")
-time.sleep(2)
-print("<-----------------KaliLinux---------------->")
-print("<-----------------Ubuntu OS---------------->")
-print("<-----------------Debian OS---------------->")
-print("<-----------------ArchLinux---------------->")
-print("<------------------Manjaro----------------->")
-print("<-----------------Fedora OS---------------->")
-print("<------------------Void OS----------------->")
-print("<-----------------Alpine OS---------------->")
-print("<------------------BackBox----------------->")
-print("<------------------Cent OS----------------->")
-print("<---------------openSUSELeap--------------->")
-print("<------------openSUSETumbleweed------------>")
-time.sleep(2)
-print("<==========================================>")
+print("What LinuxOS do you want install in Termux?")
+time.sleep(2) 
+x = PrettyTable()
+x.field_names = ["N", "System"]
+x.add_rows(
+    [
+        [1, "Kali Linux"],
+        [2, "Ubuntu OS"],
+        [3, "Debian OS"],
+        [4, "Arch Linux"],
+        [5, "Manjaro"],
+        [6, "Fedora OS"],
+        [7, "Void Linux"],
+        [8, "Alpine Linux"],
+        [9, "BackBox"],
+        [10, "Cent OS"],
+        [11, "openSUSE Leap"],
+        [12, "openSUSE Tumbleweed"],
+    ]
+)
+print(x)
 time.sleep(1)
 print("Choose your Linux OS (number OS by list) : ")
 
