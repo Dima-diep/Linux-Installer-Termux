@@ -4,6 +4,7 @@ import os
 import time
 from prettytable import PrettyTable
 
+os.system("clear")
 for i in range(0,45):
     print("Loading install program:")
     print("#"*i)
