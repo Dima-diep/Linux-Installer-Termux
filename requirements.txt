@@ -1,3 +1,2 @@
-colorama == 0.4.4
-termcolor == 1.1.0
-lolcat == 1.4
+lolcat
+prettytable
